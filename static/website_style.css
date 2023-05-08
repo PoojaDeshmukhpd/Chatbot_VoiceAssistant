@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+:root {
+ 	--primary-color:#557A95;
+ 	--secondary-color:#43121d;
+ 	--third-color:#f98169;
+ 	--white-color:#fff;
+ 	--text-color:#555;
+ 	--text-gray:#999;
+ 	--black-color:#000;
+ 	--primary-font:'Roboto' sans-serif;
+ 	--secondary-font:'Quicksand' sans-serif;
+ 	;
+ }
+
+:after,
+ :before {
+
+ -webkit-box-sizing:border-box;
+ box-sizing:border-box;
+ margin-left: 0;
+ padding:0;
+ }
+
+ :active,
+ :hover,
+ :focus{
+outline:0 !important;
+outline-offset: 0;
+ }
+
+ a,
+ a:hover {
+ 	text-decoration: none;
+ }
+ a:hover{
+ 	color:var(--primary-color);
+ }
+ ul,ol{
+ 	margin:0;
+ 	padding: 0;
+
+ }
+
+ /* Define Variable */
+
+
+ html{
+ 	scroll-behavior: smooth;
+
+ }
+
+ body{
+ 	font-family: var(--primary-font);
+ 	font-size: 100%;
+ 	font-weight: 400;
+ }
+
+ /*
+ **********************
+   CUSTOM SCROLLBAR
+ **********************
+ */
+
+ ::-webkit-scrollbar{
+ 	width: 0.625rem;
+ }
+ ::-webkit-scrollbar-track{
+ 	background: var(--white-color);
+ }
+ ::-webkit-scrollbar-thumb{
+           background: var(--primary-color);
+ }
+
+  /*
+ **********************
+   CUSTOM SCROLLBAR
+ **********************
+ */
+
+ h1{
+ 	font-size: 3rem;
+ 	font-weight: 900;
+ 	margin-bottom: 3rem;
+ 	color: var(--secondary-color);
+ }
+
+ h2{
+ 	font-weight: 800;
+ 	font-size: 2.25rem;
+ 	text-transform: capitalize;
+ 	font-family: var(--secondary-font);
+ 	color: var(--secondary-color);
+ 	line-height:3rem;
+
+ }
+
+ h4{
+ 	color: var(--secondary-color);
+ 	font-family: var(--secondary-font);
+ 	text-transform: capitalize;
+ 	font-size: 18px;
+ 	font-weight: 880;
+ 	margin-bottom: 0.5rem;
+ }
+
+ h5{
+ 	color: var(--primary-color);
+ 	font-family: var(--secondary-font);
+ 	text-transform: capitalize;
+ 	font-size: 1rem;
+ 	font-weight: 700;
+ 	margin-bottom: 0.5rem;
+ }
+
+ p{
+ 	font-size: 1rem;
+ 	color:var(--text-color);
+ 	font-weight: 400;
+ 	line-height: 1.75rem;
+ 	letter-spacing: 1px;
+ }
+
+ .main-btn{
+ 	display: inline-block;
+ 	padding: 0.625rem 1.875rem;
+ 	line-height: 1.5625rem;
+ 	background-color: var(--primary-color);
+ 	border: 0.1875rem solid var(--primary-color);
+ 	color: var(--white-color);
+ 	font-size:0.9375rem;
+ 	font-weight: 600;
+ 	text-transform: capitalize;
+ 	box-shadow: 0px 2px 10px -1px rgb(0 0 0/19%);
+ 	-webkit-transition:all .4s ease-out 0s;
+ 	-o-transition:all .4s ease-out 0s;
+ 	-moz-transition:all .4s ease-out 0s;
+ 	transition:all .4s ease-out 0s;
+
+ }
+ .white-btn
+ {
+ 	padding: 0.625rem 1.875rem;
+ 	line-height: 25px;
+ 	background-color: var(--white-color);
+ 	border:0.1875rem solid var(--white-color);
+ 	color: var(--text-color);
+ 	font-size: 0.9375rem;
+ 	font-weight: 600;
+ 	text-transform: capitalize;
+ }
+ .main-btn:hover
+ {
+ 	background-color: transparent;
+ 	color: var(--primary-color);
+
+ }
+ .white-btn:hover
+ {
+ 	background-color: transparent;
+ 	color: var(--primary-color);
+ 	border-color: var(--primary-color);
+ }
+ .wrapper{
+ 	padding-top: 8.25rem;
+ 	padding-bottom: 8.25rem;
+ }
+
+ .text-content{
+ 	width:70%;
+ 	margin: auto;
+ }
+ .counter-section h2,
+ .testimonial-section h2,
+ .book-food-text h2{
+ 	color:var(--white-color);
+ }
+
+ /*
+******************************
+		Header Dsign
+******************************/
+
+.navigation-wrap{
+	position: fixed;
+	width:100%;
+	left:0;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item{
+	padding: 0 0.625rem;
+	transition: all 200ms linear;
+}
+
+.navbar-toggler:focus{
+	outline: unset;
+	border: unset;
+	box-shadow: none;
+}
+.nav-link{
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: var(--primary-color);
+	letter-spacing: 0;
+}
+.navigation-wrap .main-btn
+{
+	padding: 0.3125rem 1.4375rem;
+	box-shadow: none;
+	margin-left: 0.625rem;
+}
+/*Change the navigation bar on scrolling*/
+.navigation-wrap.scroll-on{
+	position: fixed;
+	top: 0 ;
+	left:0;
+	width:100%;
+	background: var(--white-color);
+	box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.09);
+	transition: all .15s ease-in-out 0s;
+
+}
+/*
+*********************************
+		Top Banner Design
+*********************************/
+
+
+.top-banner{
+opacity:1;
+	width:100%;
+	background: url('../static/images/bg1 (1).jpg') no-repeat center;
+	background-size: cover;
+	padding: 10.875rem 0 9.375rem;
+
+}
+
+.developers{
+opacity:1;
+	width:100%;
+
+	background-size: cover;
+	padding: 10.875rem 0 9.375rem;
+
+}
+
+.service-style .main-heading,
+{
+    font-size:5rem;
+    color:#fd5c63;
+    letter-spacing: 1px;
+    font-weight:bold;
+}
+
+/* service  */
+.service-style{
+    margin-bottom: 30px;
+
+}
+
+/*
+*********************************
+ 	Explore Food
+***********************************/
+
+
+.explore-food .card{
+
+	border: none;
+	background: transparent;
+	border-radius: 0.9375rem;
+
+
+}
+
+.explore-food .card img{
+    height: 16rem;
+	width: 16rem;
+	border-radius: 1.5rem;
+	object-fit: cover;
+}
+.explore-food .card span{
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--primary-color);
+	padding-bottom: 1rem;
+	border-bottom: 0.0625rem solid #eee;
+}
+
+.explore-food .card span del{
+
+	color: var(--green-color);
+	margin-left: 0.5rem;
+}
+
+
+/*********************************************
+Technologies Used
+*************************************************/
+
+.story-section
+ {
+ 	width: 100%;
+ 	margin-top:30px;
+ 	height:40.125rem;
+ 	background: url('../static/images/tech.jpg') no-repeat center;
+ 	background-size: cover;
+ 	padding-top: 90px;
+ 	text-align: center;
+ }
+ .story-section h2{
+ 	color: var(--primary-color);
+ }
+
+
+ /***********************************************
+
+Sugesstion
+ ***************************************************** */
+.suggestion{
+	width:65%;
+	margin:0 auto;
+}
+
+.suggestion .form-control{
+	height:3.225rem;
+	padding:0 1.25rem;
+	font-size: 0.875rem;
+	width:95%;
+	border:none;
+	border-radius: 0;
+	background: transparent;
+	border:0.1875rem solid grey;
+	font-weight: 700;
+	color: black
+}
+.suggestion .form-control:hover,
+.suggestion .form-control:focus{
+outline:none;
+box-shadow: none;
+border-color: var(--primary-color);
+	}
+
+/*************************************************************
+FOOTER
+ **************************************************************** */
+.footer{
+	background: var(--primary-color);
+}
+.footer .footer-link{
+	font-size: 1rem;
+	color:var(--white-color);
+    padding: 0 1.875rem;
+}
+
+.footer .footer-link a:hover{
+	color:var(--white-color) !important;
+}
+.footer a i{
+font-size:1.5rem;
+color:var(--white-color);
+padding:0 1rem;
+}
